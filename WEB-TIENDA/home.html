@@ -3,71 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda </title>
+    <title>Equipo de Cómputo</title>
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <header>
-        <div class="logo">Tienda</div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#departamentos">Departamentos</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Equipo de Cómputo</h1>
     </header>
-<main>
-    <section class="hero">
-        <h1>Bienvenido a Nuestra Tienda</h1>
-        <p>Encuentra todo lo que necesitas en un solo lugar.</p>
-    </section>
-
-    <section id="departamentos" class="departments">
-        <h2>Descubre Nuestros Departamentos</h2>
-        <div class="grid-container">
-            <!-- Electrónica -->
-            <div class="department-card">
-                <img src="images/electronica.jpg" alt="Electrónica">
-                <h3>Electrónica</h3>
-                <p>Última tecnología en televisores, celulares y más.</p>
-                <a href="departamento-electronica.html" class="button">Explorar Electrónica</a>
-            </div>
-        </div>
-    </section>
-</main>
-                    <button>Comprar ahora</button>
-                </div>
-                <div class="card">
-                    <h3>Ropa</h3>
-                    <p>Moda para toda la familia.</p>
-                    <button>Comprar ahora</button>
-                </div>
-                <div class="card">
-                    <h3>Hogar</h3>
-                    <p>Muebles, decoración y utensilios.</p>
-                    <button>Comprar ahora</button>
-                </div>
-                <div class="card">
-                    <h3>Deportes</h3>
-                    <p>Equipo y ropa deportiva.</p>
-                    <button>Comprar ahora</button>
-                </div>
-            </div>
-        </section>
-        <section id="ofertas" class="offers">
-            <h2>Ofertas Especiales</h2>
-            <p>¡Aprovecha nuestros descuentos por tiempo limitado!</p>
-        </section>
-        <section id="contacto" class="contact">
-            <h2>Contacto</h2>
-            <p>¿Tienes dudas? Contáctanos al <strong>800-123-4567</strong> o al correo <strong>contacto@tienda.com</strong>.</p>
+    <main>
+        <section class="product">
+            <img src="https://via.placeholder.com/200" alt="Computadora" class="animate">
+            <h2>Computadora Gamer</h2>
+            <p>Alta potencia para tus juegos y trabajos profesionales.</p>
+            <label for="modal-toggle" class="btn-open-modal">Más información</label>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Tienda. Todos los derechos reservados.</p>
+        <p>© 2024 Equipo de Cómputo</p>
     </footer>
+
+    <!-- Modal con checkbox -->
+    <input type="checkbox" id="modal-toggle" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-toggle" class="close">&times;</label>
+            <h2>Detalles del Producto</h2>
+            <p>Procesador: Intel Core i9</p>
+            <p>RAM: 32GB DDR4</p>
+            <p>Almacenamiento: 1TB SSD + 2TB HDD</p>
+            <p>Tarjeta gráfica: NVIDIA RTX 3080</p>
+        </div>
+    </div>
 </body>
 </html>
-
